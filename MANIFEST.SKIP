@@ -1,0 +1,13 @@
+^\.git/
+^\.github/
+\bMakefile$
+\bblib/
+\bpm_to_blib$
+^MYMETA\.
+^Samizdat-Plugin-Fortnox-
+\.tar\.gz$
+~$
+\.bak$
+\.orig$
+\.rej$
+\.swp$
