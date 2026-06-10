@@ -30,8 +30,6 @@ WriteMakefile(
   PREREQ_PM        => {
     'Mojolicious' => '9.0',
     'Hash::Merge' => 0,
-    # Samizdat (core) provides Samizdat::Model::Cache + the settings resolver;
-    # declared as a runtime requirement in META below (not on CPAN yet).
   },
   TEST_REQUIRES => { 'Test::More' => 0 },
   META_MERGE    => {
