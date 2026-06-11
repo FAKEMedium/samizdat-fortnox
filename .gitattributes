@@ -1,0 +1,25 @@
+# Samizdat plugin distribution (a Perl dist). Base GitHub Linguist's language stats on the
+# Perl code; treat the view layer / migrations / translations / generated assets as
+# documentation or vendored, and tell GitHub how to syntax-highlight the Mojolicious .ep
+# templates by their format suffix (the renamed *.js.ep / *.css.ep source).
+
+lib/Samizdat/resources/templates/**   linguist-documentation
+lib/Samizdat/resources/migrations/**  linguist-documentation
+lib/Samizdat/resources/locale/**      linguist-vendored
+lib/Samizdat/resources/public/**      linguist-vendored
+
+*.ep        linguist-documentation
+*.html.ep   linguist-language=HTML
+*.js.ep     linguist-language=JavaScript
+*.css.ep    linguist-language=CSS
+*.tex.ep    linguist-language=TeX
+*.mail.ep   linguist-language=HTML
+*.xml.ep    linguist-language=XML
+
+*.po   linguist-vendored
+*.pot  linguist-vendored
+*.mo   binary
+
+*.pm linguist-language=Perl
+*.pl linguist-language=Perl
+*.t  linguist-language=Perl
